@@ -3,7 +3,9 @@ class Storage {
   constructor(inputArray) {
     this.#input = inputArray;
   }
-  getItems() {
+
+
+   getItems() {
     return this.#input;
   }
   addItem(newItem) {
@@ -17,6 +19,8 @@ class Storage {
 
 const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
 console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+
+
 
 storage.addItem("Droid");
 console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
